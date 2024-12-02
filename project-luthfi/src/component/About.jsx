@@ -1,8 +1,8 @@
 import React from "react";
-import Ig from '..//assets/instagram.svg';
-import Git from '..//assets/github.svg';
+import Ig from '../assets/instagram.svg';
+import Git from '../assets/github.svg';
 import Wa from '../assets/whatsapp.svg';
-import X from '..//assets/x.svg';
+import X from '../assets/x.svg';
 
 const About = () => {
     return (
