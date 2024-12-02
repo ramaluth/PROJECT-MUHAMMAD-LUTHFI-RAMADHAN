@@ -1,14 +1,14 @@
-import React, { useState } from 'react'  
-import { Link } from 'react-scroll'
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-black fixed w-full z-10 mb-5">
+    <nav className="bg-white text-black fixed w-full z-50 mb-5 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <h1 className="text-2xl font-bold">My Portofolio</h1>
+          <h1 className="text-2xl text-teal-500 font-bold">Muhammad Luthfi Ramadhan</h1>
           <div className="hidden md:flex space-x-4">
             <Link
               to="home"
@@ -27,12 +27,12 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              to="projects"
+              to="project"
               smooth={true}
               duration={500}
               className="hover:text-blue-300 cursor-pointer"
             >
-              Projects
+              Project
             </Link>
             <Link
               to="contact"
@@ -43,7 +43,7 @@ const Navbar = () => {
               Contact
             </Link>
           </div>
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-black hover:text-blue-300">
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-black hover:text-teal-500">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
             </svg>
@@ -69,12 +69,12 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="projects"
+            to="project"
             smooth={true}
             duration={500}
             className="block px-4 py-2 text-sm hover:text-zinc-200 cursor-pointer"
           >
-            Projects
+            Project
           </Link>
           <Link
             to="contact"
@@ -89,5 +89,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
